@@ -7,12 +7,16 @@ prompt.get(['name', 'class', 'marks'],
 
 
 
+
 // grade function implements if-else statement to evaluate the grade of a student 
 //based on the marks entered via command line.
 // after the condition has been met it will display both the student's details and the grade
 
-function grade (shoot, result) 
+function grade (shoot, mark) 
 {
+    console.log('  Name: ' + mark.name);
+    console.log('  class: ' + mark.class); 
+    console.log('  Marks: ' + mark.marks);
     //it will display an error 
     if (shoot) 
     
@@ -22,21 +26,22 @@ function grade (shoot, result)
 //it checks through the if statement for the condition the value entered meets
 // then displays the grade inside it
 
-    if(result.marks<=100 && result.marks>0)
+    if(mark.marks<=100 && mark.marks>0)
     {
-    if(result.marks>79){
+
+    if(mark.marks>79){
     console.log('  Grade: ' + 'A');
     }
-    else if (result.marks<79 && result.marks >=60){
+    else if (mark.marks<79 && mark.marks >=60){
         console.log('  Grade: ' + 'B');
     }
-    else if (result.marks<60 && result.marks >=49){
+    else if (mark.marks<60 && mark.marks >=49){
         console.log('  Grade: ' + 'C');
     }
-    else if (result.marks<49 && result.marks >=40){
+    else if (mark.marks<49 && mark.marks >=40){
         console.log('  Grade: ' + 'D');
     }
-    else if (result.marks<40 && result.marks >=59){
+    else if (mark.marks<40 && mark.marks >=59){
         console.log('  Grade: ' + 'E');
     }
 }
@@ -44,6 +49,7 @@ function grade (shoot, result)
         console.log('Entry Not Allowed');
     }
 
+   
 
     });
 
