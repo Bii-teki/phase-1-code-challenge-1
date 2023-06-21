@@ -24,7 +24,7 @@ Requirements
 
 ### For building and running the application you need:
 
-In this repository there are solutions for the three Toy problems in Javascript 
+In this repository, there are solutions for the three Toy problems in Javascript 
 
 N/B
 
