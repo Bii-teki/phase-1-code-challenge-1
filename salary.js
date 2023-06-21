@@ -6,13 +6,27 @@ prompt.start();
 prompt.get(['basicSalary'], function (err, salo)
 //returns value entered via command line
  {
-// declared variables nssf, salary and personal relief and assigned value
-let nssf = 200;
-let salary = salo.basicSalary - nssf;
-let personalRelief = 2400;
+
 
 const payee =()=>{
-
+    // calculate nssf
+    const nssfMin =0.06;
+    let nssf2 = 0;
+    
+    if (salo.basicSalary <= 6000){
+        nssf2 = basicSalary * nssfMin;
+    
+    }
+    else if(salo.basicSalary > 6000 && salo.basicSalary <=18000){ 
+        nssf2 = (basicSalary-6000) * nssfMin + 360;
+    
+    }
+    else{
+        nssf2 = 1080;
+    }
+    let salary = salo.basicSalary - nssf2;
+    let personalRelief = 2400;
+    
   //throws an error
   if (err) { return onErr(err);
   }
@@ -36,6 +50,8 @@ const payee =()=>{
         //if so, takes salary less 32333 multiply by 0.3
         //the add 2083.33 and 2400 to the value obtained
     }
+
+
 
     //it implements if-else statement to determine the nhif to be deducted
     if (salo.basicSalary >= 1000) {
@@ -77,14 +93,21 @@ const payee =()=>{
     } else {
         nhif += 0;
     }
+
+
+
+
+
+
+
     //to get paye you less personal relief
     //for net monthly salary you take basic salary less nhif, nssf and paye 
     let pay = paye-personalRelief;
-    let pow =salo.basicSalary  - (pay + nhif  + nssf);
+    let pow =salo.basicSalary  - (pay + nhif  + nssf2);
     console.log('  Basic Salary: ' + salo.basicSalary);
     console.log('  Paye without relief: ' + paye);
     console.log('  NHIF Contribution: ' + nhif);    
-    console.log('  nssf contribution: ' + nssf);
+    console.log('  nssf contribution: ' + nssf2);
     console.log('  paye with relief: ' + pay); 
     console.log('  Net Monthly Salary: ' + pow);
 }
