@@ -10,20 +10,20 @@ prompt.get(['basicSalary'], function (err, salo)
 
 const payee =()=>{
     // calculate nssf
-    const nssfMin =0.06;
+    const nssfMin = 0.06;
     let nssf2 = 0;
     
     if (salo.basicSalary <= 6000){
-        nssf2 = basicSalary * nssfMin;
-    
+        nssf2 += Math.floor(salo.basicSalary * nssfMin);
     }
-    else if(salo.basicSalary > 6000 && salo.basicSalary <=18000){ 
-        nssf2 = (basicSalary-6000) * nssfMin + 360;
-    
+    else if(salo.basicSalary > 6000 && salo.basicSalary <=18000){
+        nssf2 += Math.floor((salo.basicSalary-6000) * nssfMin + 360);
     }
     else{
-        nssf2 = 1080;
+        nssf2 += 1080;
     }
+
+
     let salary = salo.basicSalary - nssf2;
     let personalRelief = 2400;
     
