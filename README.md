@@ -1,15 +1,15 @@
 # PHASE-1 WEEK-ONE CODE CHALLENGE
-we are provided with three programming challanges and we are required to come up with solutions using javascript programming language. The problems are as follows 
+We are provided with three programming challenges and we are required to come up with solutions using a javascript programming language. The problems are as follows 
             1. Student Grade Generator
             2. Speed Detector
             3. Salary calculator
 
 
 ## Challenge 1: Student Grade Generator (Toy Problem)
-In this challenge, we need to write a program that requests user to input student marks. The input should be between 0 and 100. Then output the correct grade:  A > 79, B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40.
+In this challenge, we need to write a program that requests users to input student marks. The input should be between 0 and 100. Then output the correct grade:  A > 79, B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40.
 
 ## Challenge 2: Speed Detector (Toy Problem)
-Here we need to write a program that takes as input the speed of a car e.g 80. If the speed is less than 70, it should print Ok. Otherwise, for every 5 km/s above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points.
+Here we need to write a program that takes as input the speed of a car e.g. 80. If the speed is less than 70, it should print Ok. Otherwise, for every 5 km/s above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points.
 
 For example, if the speed is 80, it should print: “Points: 2”. If the driver gets more than 12 points, the function should print: “License suspended”.
 
@@ -24,7 +24,7 @@ Requirements
 
 ### For building and running the application you need:
 
-In this repository there are solutions for the three Toy problems in Javascript 
+In this repository, there are solutions for the three Toy problems in Javascript 
 
 N/B
 
@@ -47,4 +47,4 @@ If you are using vs code, use command (code .). Or use IDE of your choice.
 
 # Copyright
 
-Released under the MIT License. (LICENSE) file.
+Released under the MIT License. [license](LICENSE.text) file.
