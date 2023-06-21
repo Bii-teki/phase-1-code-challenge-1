@@ -45,6 +45,6 @@ If you are using vs code, use command (code .). Or use IDE of your choice.
 # Authors
 ## Geoffrey Bii
 
-# Copyright
+### Copyright
 
 Released under the MIT License. [license](LICENSE.text) file.
