@@ -42,7 +42,7 @@ If you are using vs code, use command (code .). Or use IDE of your choice.
 
 
 
-# Authors
+# Author
 ## Geoffrey Bii
 
 ### Copyright
