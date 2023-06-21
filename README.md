@@ -47,4 +47,4 @@ If you are using vs code, use command (code .). Or use IDE of your choice.
 
 # Copyright
 
-Released under the MIT License. [license](blob/main/LICENSE.text) file.
+Released under the MIT License. [license](LICENSE.text) file.
